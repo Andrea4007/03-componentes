@@ -1,0 +1,16 @@
+<!-- <p>
+  header works!
+</p>
+ -->
+<ion-header no-border>
+    <!-- dentro del ion toolbar pueden definirse una serie de botones -->
+    <ion-toolbar>
+        <!-- el slot va a colocar el boton al inicio -->
+        <ion-buttons slot="start">
+            <!-- para que cargue el back incluso si esta es la primera pagina que se carga con el defaultHref, es decir cuando no haya historia-->
+            <ion-back-button text="Regresar" defaultHref="/"></ion-back-button>
+        </ion-buttons>
+        <!-- el titulo debe de ser dinamico -->
+        <ion-title text-capitalize> {{ titulo }} </ion-title>
+    </ion-toolbar>
+</ion-header>

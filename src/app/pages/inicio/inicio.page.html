@@ -1,0 +1,21 @@
+<ion-header no-border>
+    <ion-toolbar>
+        <ion-title text-capitalize>compónentes</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <!-- //aqui va todo el contenido que queremos ver en nuestra pagina -->
+    <ion-list>
+        <!-- le dice a ionic que es un elemento en el q se puede hacer clic y aparacecera la flecha -->
+        <ion-item *ngFor="let c of componentes" [routerLink]="c.redirectTo" detail>
+            <ion-icon slot="start" [name]="c.icon"></ion-icon>
+            <ion-label>{{ c.name }}</ion-label>
+        </ion-item>
+
+    </ion-list>
+    <!-- 
+    <ion-button routerLink="/alert">Alert</ion-button>
+    <ion-button routerLink="/action-sheet">Action Sheet</ion-button> -->
+    <!--  <h1>holaaaaaaaaa</h1> -->
+</ion-content>
