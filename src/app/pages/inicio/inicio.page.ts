@@ -15,9 +15,14 @@ componentes: Componente[] = [
     redirectTo: '/action-sheet' //redireccionando al alert
   },
   {
-    icon: 'appstore',
+    icon: 'trash',
     name: 'Alert',
     redirectTo: '/alert'
+  },
+  {
+    icon: 'beaker',
+    name: 'Avatar',
+    redirectTo: '/avatar'
   }
 ];
   constructor() { }

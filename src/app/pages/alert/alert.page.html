@@ -1,4 +1,4 @@
-<app-header titulo="alert page"></app-header>
+<app-header [titulo]="titulo || 'Alert Page'"></app-header>
 <!-- <ion-header>
     <ion-toolbar>
         <ion-buttons slot="start">
@@ -10,6 +10,12 @@
 </ion-header> -->
 
 <ion-content padding>
-    <h1>Este es el alert-pages</h1>
 
+    <ion-button expand="full" (click)="presentAlert()" color="primary">Show Alert</ion-button>
+    <ion-button expand="full" (click)="presentAlertConfirm()" color="secondary">Show Input</ion-button>
+    <ion-button expand="full" (click)="presentAlertPrompt()" color="primary">Show Pront</ion-button>
+    <ion-button expand="full" (click)="presentInput()" color="primary">Present Input enviar parametro</ion-button>
+
+    <!--  <h1>Este es el alert-pages</h1>
+ -->
 </ion-content>
